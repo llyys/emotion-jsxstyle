@@ -1,21 +1,22 @@
 {
-	"version": "1.8.10",
-	"compilerOptions": {
-			"target": "es5",
-			"module": "commonjs",
-			"moduleResolution": "node",
-			"experimentalDecorators": true,
-			"jsx": "react",
-			"noEmit": true,
-			"rootDir": ".",
-			"lib": [
-					"dom", "es5", "scripthost", "es2015.promise", "es2015.generator", "es2015.iterable"
-			]
-	},
-	"include": [
-			"**/*.ts"
-	],
-	"exclude": [
-			"../node_modules"
-	]
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "declaration": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.promise",
+      "es2015.generator",
+      "es2015.iterable"
+    ]
+  },
+  "include": ["./src/*.tsx"],
+  "exclude": ["node_modules"]
 }
